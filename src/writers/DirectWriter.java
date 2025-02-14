@@ -1,8 +1,10 @@
+package writers;
+
 import java.util.ArrayList;
 
-public class Writer {
+public class DirectWriter {
     ArrayList<String> output_;
-    public Writer(ArrayList<String> output) {
+    public DirectWriter(ArrayList<String> output) {
         output_ = output;
     }
     public void write() {
@@ -10,10 +12,4 @@ public class Writer {
             System.out.println(output_.get(i));
         }
     }
-    public void reverse_write() {
-        for (int i = output_.size() - 1; i >= 0; --i) {
-            System.out.println(output_.get(i));
-        }
-    }
-
 }

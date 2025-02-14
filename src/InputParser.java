@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 
 public class InputParser {
-    public ArrayList<String> input_text_;
+    public final ArrayList<String> input_text_;
     InputParser(String file_path) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(file_path));
         input_text_ = new ArrayList<>();
